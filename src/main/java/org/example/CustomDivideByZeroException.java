@@ -37,6 +37,8 @@ public class CustomDivideByZeroException extends  Exception {
      */
     public CustomDivideByZeroException() {
         // TODO: Modify this constructor to accept and store the two values attempted to be divided
-        super("Attempted to divide by zero");
+        super("Attempting to divide these follwoing " + a + " by " + b + " (divided then by zero)");
+        this.a = a;
+        this.b = b;
     }
 }
